@@ -5,30 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Angels Dive</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       background-color: #000;
       color: white;
       font-family: Arial, sans-serif;
-      text-align: center;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh;
+      overflow: hidden;
     }
-    img {
-      max-width: 80%;
+
+    .logo {
+      width: 100%;
+      max-width: 1000px;
+      padding-top: 40px;
+    }
+
+    .logo img {
+      width: 100%;
       height: auto;
+      display: block;
     }
+
     .coming-soon {
-      margin-top: 20px;
-      font-size: 2rem;
+      font-size: 8vw; /* Responsive, scales with screen size */
+      padding-bottom: 60px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <img src="Angels'Dive_BB.jpg" alt="Angels Dive Logo" />
+  <div class="logo">
+    <img src="Angels'Dive_BB.jpg" alt="Angels Dive Logo" />
+  </div>
   <div class="coming-soon">Coming Soon</div>
 </body>
 </html>
