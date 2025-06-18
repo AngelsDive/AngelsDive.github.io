@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Angels Dive</title>
+
+  <!-- Beornheard Font (hosted on Google Fonts alternative or local) -->
+  <link href="https://fonts.cdnfonts.com/css/beornheard" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -21,6 +25,7 @@
       justify-content: space-between;
       align-items: center;
       overflow: hidden;
+      text-align: center;
     }
 
     .logo {
@@ -35,10 +40,16 @@
       display: block;
     }
 
+    .qr-code {
+      margin: 30px 0;
+      width: 180px;
+      height: auto;
+    }
+
     .coming-soon {
-      font-size: 8vw; /* Responsive, scales with screen size */
+      font-size: 8vw;
       padding-bottom: 60px;
-      text-align: center;
+      font-family: 'Beornheard', sans-serif;
     }
   </style>
 </head>
@@ -46,6 +57,9 @@
   <div class="logo">
     <img src="Angels_Dive_Logo.png" alt="Angels Dive Logo" />
   </div>
+
+  <img src="angels.dive_qr.png" alt="QR Code" class="qr-code" />
+
   <div class="coming-soon">Coming Soon</div>
 </body>
 </html>
