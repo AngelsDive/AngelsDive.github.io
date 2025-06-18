@@ -37,31 +37,45 @@
     }
 
     .qr-code {
-      margin: 30px 0;
+      margin: 30px 0 10px;
       width: 216px;
       height: auto;
       cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .qr-code:hover {
+      filter: drop-shadow(0 0 10px #0ff);
+      transform: scale(1.05);
+    }
+
+    .click-text {
+      color: #0ff;
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-decoration: underline;
     }
 
     .coming-soon {
-      font-size: 8vw;
+      font-size: clamp(24px, 8vw, 80px);
       padding-bottom: 60px;
       font-family: Impact, sans-serif;
     }
   </style>
 </head>
 <body>
-  <!-- Top Logo -->
+  <!-- Logo -->
   <div class="logo">
     <img src="Angels_Dive_Logo.png" alt="Angels Dive Logo" />
   </div>
 
-  <!-- Clickable QR Code -->
+  <!-- QR Code with Clickable Link -->
   <a href="https://www.instagram.com/angels.dive/" target="_blank">
     <img src="angels.dive_qr.png" alt="QR Code" class="qr-code" />
   </a>
+  <div class="click-text">Click Me</div>
 
-  <!-- Coming Soon Text -->
+  <!-- Coming Soon -->
   <div class="coming-soon">Coming Soon</div>
 </body>
 </html>
