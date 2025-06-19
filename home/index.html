@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../favicon.png" type="image/png" />
+  <title>Angels Dive</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1000;
+    }
+
+    .home-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .home-button:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 10px black);
+    }
+
+    .home-button:active {
+      transform: scale(0.95);
+      filter: drop-shadow(0 0 20px black);
+    }
+
+    .home-button svg {
+      width: 100%;
+      height: 100%;
+      fill: black;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 1000px;
+      padding-top: 100px; /* Adjusted for navbar height */
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .qr-code {
+      margin: 30px 0;
+      width: 216px;
+      height: auto;
+      cursor: pointer;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        filter: drop-shadow(0 0 0px white);
+        transform: scale(1);
+      }
+      50% {
+        filter: drop-shadow(0 0 20px white);
+        transform: scale(1.05);
+      }
+      100% {
+        filter: drop-shadow(0 0 0px white);
+        transform: scale(1);
+      }
+    }
+
+    .coming-soon {
+      font-size: clamp(24px, 8vw, 80px);
+      padding-bottom: 60px;
+      font-family: Impact, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="/home" class="home-button" title="Home">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 12l22 20h-6v20h-12v-12h-8v12H16V32h-6z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="../images/Angels_Dive_Logo.png" alt="Angels Dive Logo" />
+  </div>
+
+  <!-- QR Code with breathing white glow -->
+  <a href="https://www.instagram.com/angels.dive/" target="_blank">
+    <img src="../images/angels.dive_qr.png" alt="QR Code" class="qr-code" />
+  </a>
+
+  <!-- Coming Soon -->
+  <div class="coming-soon">Coming Soon</div>
+</body>
+</html>
