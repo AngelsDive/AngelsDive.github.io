@@ -64,6 +64,33 @@
       fill: black;
     }
 
+    .nav-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: 40px;
+      margin-left: 10px;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      border-left: 1px solid black;
+    }
+
+    .nav-button:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 10px black);
+    }
+
+    .nav-button:active {
+      transform: scale(0.95);
+      filter: drop-shadow(0 0 20px black);
+    }
+
     .logo {
       width: 100%;
       max-width: 1000px;
@@ -114,6 +141,8 @@
         <path d="M32 12l22 20h-6v20h-12v-12h-8v12H16V32h-6z"/>
       </svg>
     </a>
+    <a href="/library.html" class="nav-button" title="Library">Library</a>
+    <a href="/schedule.html" class="nav-button" title="Schedule">Schedule</a>
   </div>
 
   <!-- Logo -->
